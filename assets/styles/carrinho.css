@@ -1,0 +1,89 @@
+.item-carrinho {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    justify-content: center;
+}
+
+footer{
+   color: black;
+}
+
+body{
+    background-color: #121212;
+    color: aliceblue;
+}
+
+.finalizar{
+    border-radius: 0.5rem;
+    background-color: #0078d4;
+    color: aliceblue;
+}
+
+.jogo_imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    padding: 4px;
+
+    p {
+        background-color: rgb(99, 99, 99);
+        color: aliceblue;
+        padding: 0.3rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+}
+
+.preco {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    font-size: 2.5vw;
+}
+
+.capa {
+    width: 28vw;
+    padding: 0.4rem;
+    border-radius: 1rem;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+
+@media (max-width: 600px) {
+
+    .capa {
+        width: 45vw;
+        padding: 0.4rem;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

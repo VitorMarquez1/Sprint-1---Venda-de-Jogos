@@ -1,0 +1,243 @@
+/* Estilo geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1b1b1b;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+
+.item-carrinho {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    justify-content: center;
+}
+
+.jogo_imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    padding: 4px;
+
+    p {
+        background-color: rgb(99, 99, 99);
+        color: aliceblue;
+        padding: 0.3rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+}
+
+.preco {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    font-size: 2.5vw;
+    button{
+        max-width: 400px;
+    }
+}
+
+.capa {
+    width: 28vw;
+    padding: 0.4rem;
+    border-radius: 1rem;
+}
+
+/* Header: navbar */
+.navbar-brand .icon {
+    filter: brightness(1.1) contrast(1.2);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+/* Filtros e pesquisa no header */
+.form-select,
+#searchInput {
+    background-color: #4a6e6e;
+    color: #eee;
+    border: 1px solid #444;
+    transition: border-color 0.3s ease;
+}
+
+.form-select:focus,
+#searchInput:focus {
+    border-color: #00d8ff;
+    outline: none;
+    box-shadow: 0 0 5px #00d8ff;
+}
+
+/* Resultados da pesquisa */
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #f9f6f6;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #f3f1f1;
+    user-select: none;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* Espaço entre as janelas */
+}
+
+/* Títulos */
+h1,
+h2 {
+    color: #0078d4;
+    text-align: center;
+}
+
+/* Botões */
+button {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Carrinho */
+#cart {
+    background-color: #2d2d2d;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Lista de itens do carrinho */
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    background-color: #3a3a3a;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo dos botões de remover */
+#cart-items button {
+    background-color: #d83b01;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+#cart-items button:hover {
+    background-color: #a52a00;
+}
+
+/* Ajuste para os inputs do cartão */
+.card-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* Espaçamento maior entre os inputs */
+    padding: 15px;
+    /* Espaçamento interno */
+}
+
+.card-inputs input {
+    width: 90%;
+    /* Reduzindo um pouco a largura */
+    margin: 0 auto;
+    /* Centraliza os inputs */
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo do método de pagamento */
+#payment {
+    background-color: #2d2d2d;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Inputs de pagamento */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.window {
+    background-color: #252525;
+    width: 60%;
+    /* Ajuste para não ocupar toda a largura */
+    max-width: 800px;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
