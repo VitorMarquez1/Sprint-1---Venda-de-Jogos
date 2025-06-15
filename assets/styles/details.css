@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 50px;
+}
+
+/* Fonte geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+
+/* Header: navbar */
+.navbar-brand .icon {
+    filter: brightness(1.1) contrast(1.2);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #00d8ff;
+}
+
+/* Filtros e pesquisa no header */
+.form-select,
+#searchInput {
+    background-color: #4a6e6e;
+    color: #eee;
+    border: 1px solid #444;
+    transition: border-color 0.3s ease;
+}
+
+.form-select:focus,
+#searchInput:focus {
+    border-color: #00d8ff;
+    outline: none;
+    box-shadow: 0 0 5px #00d8ff;
+}
+
+/* Container principal */
+.container {
+    flex-grow: 1;
+}
+
+/* Título */
+h1 {
+    font-weight: 700;
+    color: #00d8ff;
+}
+
+/* Cards de jogos */
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 216, 255, 0.4);
+}
+
+/* Imagens dos cards */
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    height: 180px;
+    width: 100%;
+}
+
+/* Corpo do card */
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Título do card */
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #00d8ff;
+    text-align: center;
+}
+
+/* Botão detalhes */
+.btn-primary,
+.btn-secondary {
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0.4rem 0.7rem;
+    text-align: center;
+    user-select: none;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: #00a5cc !important;
+    border-color: #00a5cc !important;
+}
+
+/* Resultados da pesquisa */
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer.footer {
+    display: flex;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 0.9rem;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 150px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .d-flex.align-items-center.gap-2 {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    #searchInput {
+        min-width: 100%;
+    }
+}
+
+#detalhe {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#detalhe h2 {
+    color: #00d8ff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#detalhe img.main-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid #00d8ff;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.info-list li {
+    margin-bottom: 0.4rem;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #444;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    border-color: #00d8ff;
+}
